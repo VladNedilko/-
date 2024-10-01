@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [status, toggleStatus] = useStatus('inactive');
+  useLogData(status);
+
   return (
     <div className="App">
       <header className="App-header">
