@@ -1,0 +1,56 @@
+.concert-container  {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #333;
+    color: #f9a825;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .concert-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .video-section {
+    margin: 20px 0;
+  }
+  
+  .highlight-section {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .highlight-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .highlight-section li {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #f9f9f9;
+  }
+  
+  .final-message {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .final-meme {
+    animation: blink-text 1.5s steps(5, start) infinite;
+  }
+  
+  @keyframes blink-text {
+    from {
+      visibility: hidden;
+    }
+    to {
+      visibility: visible;
+    }
+  }
+  

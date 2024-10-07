@@ -1,0 +1,38 @@
+.history-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #333;
+    color: #f9a825;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .history-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .history-list li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #f9f9f9;
+  }
+  
+  .back-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #f9a825;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #c89000;
+  }
+  
