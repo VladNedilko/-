@@ -3,7 +3,7 @@ import { Button, Container } from 'react-bootstrap';
 import './Calculator.css';
 
 const Calculator = () => {
-  const [isVisible, setIsVisible] = useState(true); // Состояние видимости калькулятора
+  const [isVisible, setIsVisible] = useState(true); 
   const [input, setInput] = useState('');
   const [history, setHistory] = useState('');
   const calculatorRef = useRef(null);
@@ -32,31 +32,53 @@ const Calculator = () => {
   const handleClear = () => { setInput(''); setHistory(''); };
   const handleClearEntry = () => setInput('');
   const handleBackspace = () => setInput(input.slice(0, -1));
+
   const handleCalculate = () => {
     try {
       const result = eval(input);
       if (result === Infinity || result === -Infinity || isNaN(result)) {
-        setInput(''); // Очищаем поле, если результат бесконечность или ошибка
-        setHistory(''); // Очищаем историю
+        setInput(''); 
+        setHistory(''); 
       } else {
         setHistory(`${input} = ${result}`);
         setInput(result.toString());
       }
     } catch {
-      setInput(''); // Очищаем поле в случае ошибки
-      setHistory(''); // Очищаем историю
+      setInput(''); 
+      setHistory(''); 
     }
   };
-  const handleSquare = () => setHistory(`${input}² = ${Math.pow(parseFloat(input), 2).toString()}`);
-  const handleSquareRoot = () => setHistory(`√${input} = ${Math.sqrt(parseFloat(input)).toString()}`);
-  const handlePercentage = () => setHistory(`${input}% = ${(parseFloat(input) / 100).toString()}`);
-  const handleReciprocal = () => setHistory(`1/${input} = ${(1 / parseFloat(input)).toString()}`);
-  const handleToggleSign = () => setInput((parseFloat(input) * -1).toString());
 
-  // Функция для скрытия калькулятора
+  const handleSquare = () => {
+    const result = Math.pow(parseFloat(input), 2);
+    setHistory(`${input}² = ${result}`);
+    setInput(result.toString());
+  };
+
+  const handleSquareRoot = () => {
+    const result = Math.sqrt(parseFloat(input));
+    setHistory(`√${input} = ${result}`);
+    setInput(result.toString());
+  };
+
+  const handlePercentage = () => {
+    const result = parseFloat(input) / 100;
+    setHistory(`${input}% = ${result}`);
+    setInput(result.toString());
+  };
+
+  const handleReciprocal = () => {
+    const result = 1 / parseFloat(input);
+    setHistory(`1/${input} = ${result}`);
+    setInput(result.toString());
+  };
+
+  const handleToggleSign = () => {
+    const result = (parseFloat(input) * -1).toString();
+    setInput(result);
+  };
+
   const handleMinimize = () => setIsVisible(false);
-
-  // Функция для отображения калькулятора
   const handleShowCalculator = () => setIsVisible(true);
 
   return (
@@ -67,8 +89,7 @@ const Calculator = () => {
             <span>Calculator</span>
             <button className="minimize-button" onClick={handleMinimize}>_</button>
           </div>
-          
-          {/* История расположена сверху */}
+
           <div className="calculator-history">
             {history && <p>{history}</p>}
           </div>
@@ -76,9 +97,9 @@ const Calculator = () => {
           <div className="calculator-display">
             <input type="text" className="form-control" value={input} readOnly />
           </div>
-          
+
           <div className="button-grid">
-          <Button variant="secondary" onClick={handlePercentage}>%</Button>
+        <Button variant="secondary" onClick={handlePercentage}>%</Button>
         <Button variant="secondary" onClick={handleClearEntry}>CE</Button>
         <Button variant="danger" onClick={handleClear}>C</Button>
         <Button variant="warning" className="col-12" onClick={handleBackspace}>←</Button>
