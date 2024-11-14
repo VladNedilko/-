@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  /* --table-background-color: #fff; */
+  /* --table-text-color: #000; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-layout {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.ant-btn-primary {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 1px solid #000; 
 }
 
-.App-link {
-  color: #61dafb;
+.ant-btn-primary:hover {
+  background-color: #f0f0f0 !important; 
+  color: #000 !important; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .ant-table {
+  background-color: var(--table-background-color); 
+  color: var(--table-text-color); 
+  transition: background-color 0.3s, color 0.3s;
+} */
+
+/* .ant-table-thead > tr > th {
+  background-color: var(--table-background-color); 
+  color: var(--table-text-color); 
+} */
+
+/* .ant-table-tbody > tr > td {
+  background-color: var(--table-background-color); 
+  color: var(--table-text-color); 
+} */
+
+.ant-modal {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
