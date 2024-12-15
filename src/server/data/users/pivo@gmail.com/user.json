@@ -1,0 +1,55 @@
+{
+  "name": "pivo",
+  "email": "pivo@gmail.com",
+  "password": "2283222",
+  "avatarPath": "http://localhost:5000/users/pivo@gmail.com/pics/avatar-1733930186256.jpg",
+  "backgroundPath": "http://localhost:5000/users/pivo@gmail.com/pics/background-1733952090487.jpg",
+  "tracks": [
+    {
+      "id": 1733949463281,
+      "name": "Кладбище-самолетов",
+      "artist": "Valentin Strykalo",
+      "genre": "Jazz",
+      "tags": [
+        "Chill"
+      ],
+      "description": "Cum Back ",
+      "isRecentlyPlayed": true,
+      "lastPlayedAt": null,
+      "isPublic": true,
+      "trackLink": "http://localhost:5000/users/pivo@gmail.com/tracks/audio/audioFile-1733949463247.mp3",
+      "coverLink": "http://localhost:5000/users/pivo@gmail.com/tracks/covers/cover-1733949463247.jpg"
+    },
+    {
+      "id": 1733949544771,
+      "name": "SadSvit-Небо-_Official-video_.mp3",
+      "artist": "SadSvit",
+      "genre": "Soul",
+      "tags": [
+        "Relax"
+      ],
+      "description": "Sad SVIT",
+      "isRecentlyPlayed": true,
+      "lastPlayedAt": null,
+      "isPublic": true,
+      "trackLink": "http://localhost:5000/users/pivo@gmail.com/tracks/audio/audioFile-1733949544753.mp3",
+      "coverLink": "http://localhost:5000/users/pivo@gmail.com/tracks/covers/cover-1733949544752.jpg"
+    },
+    {
+      "id": 1733949619047,
+      "name": "Podol",
+      "artist": "Xarakter",
+      "genre": "Rep",
+      "tags": [
+        "",
+        "Relax"
+      ],
+      "description": "Ну радился на падоле и шо",
+      "isRecentlyPlayed": true,
+      "lastPlayedAt": null,
+      "isPublic": true,
+      "trackLink": "http://localhost:5000/users/pivo@gmail.com/tracks/audio/audioFile-1733949618947.mp3",
+      "coverLink": "http://localhost:5000/users/pivo@gmail.com/tracks/covers/cover-1733949618947.jpg"
+    }
+  ]
+}

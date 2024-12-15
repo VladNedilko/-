@@ -1,0 +1,135 @@
+/* Основной стиль для навбара */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Занимает всю ширину экрана */
+  height: 60px; /* Высота навбара */
+  background-color: #333;  /* Темный фон для navbar */
+  z-index: 1000;  /* Закрепляем наверху */
+  box-shadow: 0 4px 2px -2px gray;  /* Немного тени для отделения от контента */
+  padding: 0; /* Убираем отступы по бокам */
+  display: flex;
+  justify-content: center; /* Центрируем все элементы в навбаре */
+  align-items: stretch; /* Элементы растягиваются по высоте */
+}
+
+/* Контейнер для всех элементов навбара */
+.navbar-content {
+  display: flex;
+  align-items: stretch; /* Заставляем элементы растягиваться по высоте */
+  gap: 0; /* Убираем отступы между элементами */
+  width: 100%;
+  max-width: 1200px; /* Ограничиваем максимальную ширину */
+}
+
+/* Логотип */
+.logo-image {
+  height: 40px;  /* Регулируем высоту логотипа */
+  width: auto;
+  margin-right: 15px; /* Отступ справа от логотипа */
+  align-self: center; /* Центрируем по вертикали */
+}
+
+/* Контейнер для ссылок */
+.navbar-links {
+  display: flex;
+  gap: 0;  /* Убираем отступы между ячейками */
+  height: 100%; /* Заполняем всю высоту */
+}
+
+/* Элементы навигации */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  background-color: #444; /* Общий фон */
+  padding: 0 15px; /* Отступы */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Высота равна высоте Navbar */
+  border-right: 1px solid black; /* Разделительная линия */
+  transition: background-color 0.3s ease;
+}
+/* Эффект при наведении */
+.nav-link:hover {
+  background-color: #555; /* Меняем фон при наведении */
+}
+
+/* Активный элемент */
+.nav-link.active-link {
+  background-color: #333; /* Темнее цвет для активной страницы */
+}
+
+/* Контейнер для поиска */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px; /* Немного отступа слева */
+}
+
+/* Поле поиска */
+.search-input {
+  width: 150px; /* Уменьшаем поле поиска */
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+/* Контейнер для кнопок авторизации */
+.auth-buttons {
+  display: flex;
+  gap: 2px; /* Расстояние между кнопками */
+  align-items: stretch; /* Растягиваем кнопки по высоте */
+  margin-left: 20px; /* Отступ слева от поля поиска */
+  margin-top: 0;  /* Обнуляем отступ сверху */
+}
+
+/* Кнопки авторизации */
+.auth-button {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  background-color: #444;
+  padding: 0 10px; /* Отступы только по горизонтали */
+  border-radius: 0; /* Убираем скругление */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  height: 100%; /* Кнопки заполняют всю высоту */
+}
+
+/* Эффект при наведении для кнопок авторизации */
+.auth-button:hover {
+  background-color: #555; /* Меняем фон при наведении */
+}
+
+/* Обновляем стиль кнопки logout */
+.logout-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Устанавливаем высоту на всю высоту Navbar */
+  padding: 0 15px; /* Отступы по горизонтали */
+  margin: 0; /* Убираем лишние внешние отступы */
+  color: white;
+  background-color: #f44336; /* Красный фон */
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover-эффект */
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Для того чтобы меню не перекрывало содержимое страницы */
+body {
+  padding-top: 60px; /* Даем отступ сверху, чтобы контент не перекрывался navbar */
+}

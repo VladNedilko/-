@@ -1,0 +1,55 @@
+.upload-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .upload-container h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .upload-container p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .upload-dropzone {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    position: relative;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease;
+  }
+  
+  .upload-dropzone.dragging {
+    background-color: #e6f7ff;
+  }
+  
+  .upload-dropzone p {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .upload-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #0073e6;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .upload-button:hover {
+    background-color: #005bb5;
+  }
+  
+  .upload-button label {
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,58 @@
+.library {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .library h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .library ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .library-track {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    transition: background-color 0.2s;
+  }
+  
+  .library-track:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .track-info {
+    flex: 1;
+  }
+  
+  .track-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    margin: 0;
+  }
+  
+  .track-artist {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  
+  .track-cover {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    margin-left: 15px;
+    object-fit: cover;
+  }
+  

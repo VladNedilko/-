@@ -1,0 +1,19 @@
+.mix-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+  }
+  
+  .mix-card h3 {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .mix-card p {
+    color: #777;
+  }
+  
